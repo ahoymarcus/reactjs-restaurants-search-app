@@ -1,7 +1,8 @@
 # Criando um site para encontrar restaurantes usando Google Maps que consulta API do Google
 
 
-Projeto para a construção de um webapp de busca de restaurantes utilizando React-JS e a API do Google Maps. [^1]
+Projeto de desenvolvimento front-end para a construção de um webapp de busca de restaurantes utilizando a biblioteca React-JS e a APIs de busca do Google. [^1]
+
 
 
 Dependências:
@@ -9,5 +10,6 @@ Dependências:
 - Styled Component
 
 
-[^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One.trilha de Frontend.
+
+[^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.
 
