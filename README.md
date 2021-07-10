@@ -8,6 +8,7 @@ Projeto de desenvolvimento front-end para a construção de um webapp de busca d
 Dependências:
 
 - Styled Component
+- Styled-reset
 
 
 
