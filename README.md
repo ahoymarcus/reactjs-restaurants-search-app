@@ -9,7 +9,7 @@ Dependências:
 
 - Styled Component
 - Styled-reset
-
+- @material/react-text-field
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.
