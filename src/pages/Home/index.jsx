@@ -9,6 +9,7 @@ import restaurante from '../../assets/restaurante-fake.png';
 
 import { Wrapper, Container, Search, Logo, CarouselTitle, Map } from './styles';
 
+import { Card } from '../../components';
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
 	
 	// Configurações para o slick-carousel
 	const settings = {
-		dots: true,
+		dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -43,18 +44,11 @@ const Home = () => {
 					</TextField>
 					<CarouselTitle>Na sua Área</CarouselTitle>
 					<Slider {...settings}>
-						<div>
-							<img src={restaurante} alt="Fotos de restaurantes na sua área" />
-						</div>
-						<div>
-							<img src={restaurante} alt="Fotos de restaurantes na sua área" />
-						</div>
-						<div>
-							<img src={restaurante} alt="Fotos de restaurantes na sua área" />
-						</div>
-						<div>
-							<img src={restaurante} alt="Fotos de restaurantes na sua área" />
-						</div>
+						<Card photo={restaurante} />
+						<Card photo={restaurante} />
+						<Card photo={restaurante} />
+						<Card photo={restaurante} />
+						<Card photo={restaurante} />
 					</Slider>
 				</Search>
 			</Container>
