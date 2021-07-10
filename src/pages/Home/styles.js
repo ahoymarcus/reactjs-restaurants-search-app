@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-//import Slider from 'react-slick';
+import Slider from 'react-slick';
 
 
 export const Wrapper = styled.div`
@@ -40,7 +40,12 @@ export const CarouselTitle = styled.h1`
 	margin: 16px 0;
 `;
 
-
+/*Exemplo da sintaxe para estilo de Componentes*/
+export const Carousel = styled(Slider)`
+	.slick-slide {
+		margin-right: 16px;
+	}
+`;
 
 export const Map = styled.div`
 	background-color: red;

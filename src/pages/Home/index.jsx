@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 
-import Slider from 'react-slick';
-
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
 
-import { Wrapper, Container, Search, Logo, CarouselTitle, Map } from './styles';
+import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel, Map } from './styles';
 
 import { Card } from '../../components';
 
@@ -43,13 +41,16 @@ const Home = () => {
 							onChange={(e) => setInputValue(e.target.value)} />
 					</TextField>
 					<CarouselTitle>Na sua Área</CarouselTitle>
-					<Slider {...settings}>
-						<Card photo={restaurante} />
-						<Card photo={restaurante} />
-						<Card photo={restaurante} />
-						<Card photo={restaurante} />
-						<Card photo={restaurante} />
-					</Slider>
+					<Carousel {...settings}>
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+						<Card photo={restaurante} title="nome sei lá" />
+					</Carousel>
 				</Search>
 			</Container>
 			<Map />
