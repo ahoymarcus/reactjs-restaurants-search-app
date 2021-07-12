@@ -7,7 +7,7 @@ import restaurante from '../../assets/restaurante-fake.png';
 
 import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel, Map } from './styles';
 
-import { Card } from '../../components';
+import { Card, RestaurantCard } from '../../components';
 
 
 const Home = () => {
@@ -52,6 +52,7 @@ const Home = () => {
 						<Card photo={restaurante} title="nome sei lá" />
 					</Carousel>
 				</Search>
+				<RestaurantCard />
 			</Container>
 			<Map />
 		</Wrapper>
