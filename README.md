@@ -12,6 +12,7 @@ Dependências:
 - @material/react-text-field
 - @material/react-material-icon
 - react-slick e slick-carousel 
+- react-rating-stars-component
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.

@@ -17,6 +17,31 @@ export const Restaurant = styled.div`
 	}	
 `;
 
+export const RestaurantInfo = styled.div`
+	display: flex;
+	flex-direction: column;
+	
+`;
+
+export const Title = styled.span`
+	font-family: ${(props) => props.theme.fonts.regular};
+	color: ${(props) => props.theme.colors.text};
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 29px;
+	margin-bottom: 10px;
+`;
+
+export const Address = styled.span`
+	font-family: ${(props) => props.theme.fonts.regular};
+	color: ${(props) => props.theme.colors.text};
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+`;
+
+
 
 
 
