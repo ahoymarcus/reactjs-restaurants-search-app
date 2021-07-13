@@ -14,6 +14,7 @@ Dependências:
 - react-slick e slick-carousel 
 - react-rating-stars-component
 - React-JS Portals
+- google-maps-react
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.
