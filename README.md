@@ -15,6 +15,7 @@ Dependências:
 - react-rating-stars-component
 - React-JS Portals
 - google-maps-react
+- Redux e react-redux
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.
