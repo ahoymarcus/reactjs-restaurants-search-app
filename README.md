@@ -13,6 +13,7 @@ Dependências:
 - @material/react-material-icon
 - react-slick e slick-carousel 
 - react-rating-stars-component
+- React-JS Portals
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.
