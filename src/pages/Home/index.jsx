@@ -7,11 +7,13 @@ import restaurante from '../../assets/restaurante-fake.png';
 
 import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel, Map } from './styles';
 
-import { Card, RestaurantCard } from '../../components';
+import { Card, RestaurantCard, Modal } from '../../components';
 
 
 const Home = () => {
-	const [inputValue, setInputValue] = useState('');
+	const [ inputValue, setInputValue ] = useState('');
+	const [ modalOpened, setModalOpened ] = useState(true);
+	
 	
 	// Configurações para o slick-carousel
 	const settings = {
@@ -51,10 +53,12 @@ const Home = () => {
 						<Card photo={restaurante} title="nome sei lá" />
 						<Card photo={restaurante} title="nome sei lá" />
 					</Carousel>
+					
 				</Search>
 				<RestaurantCard />
 			</Container>
 			<Map />
+			<Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)} />
 		</Wrapper>
 	);
 }
