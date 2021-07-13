@@ -24,9 +24,12 @@ Dependências:
 
 
 
-### O objetivo do projeto de clonar o serviço de procura do Google:
+### Clone do projeto de clonar o serviço de procura do Google:
 ![imagem do clone do serviço de procura por lugares do Google](./assets/clone-do-serviço-google-find.png)
 
+
+### Exemplo do uso do componente Skeleton para melhorar a experiência do usuário enquanto os detalhes da Modal são recibidos da API:
+{imagem do efeito skeleton para preenchimeto dos cartões de informação}(./assets/image-exemplo-do-uso-skeleton-no-preenchimento-dos-dados.png)
 
 
 ### Resultado Final do projeto com a aplicação da animação do react-lottie para preencher a UI enquanto se espera pelos dados da API Google Maps:
