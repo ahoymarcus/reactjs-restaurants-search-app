@@ -43,7 +43,7 @@ export const CarouselTitle = styled.h1`
 /*Exemplo da sintaxe para estilo de Componentes*/
 export const Carousel = styled(Slider)`
 	.slick-slide {
-		margin-right: 16px;
+		margin-right: 30px;
 	}
 `;
 
