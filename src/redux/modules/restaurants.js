@@ -3,6 +3,7 @@ export const Types = {
 	SET_RESTAURANT: 'restaurants/SET_RESTAURANT',
 };
 
+// {name: 'Nome do Restaurante', rating: 4, address: 'Endereço do Restaurante, n. 200', url: '../../assets/restaurante-fake.png'}
 const initialState = {
 	restaurants: [],
 	restaurantSelected: null,
@@ -14,7 +15,7 @@ export default function reducer(state = initialState, action) {
 		case Types.SET_RESTAURANTS:
 			return { ...state, restaurants: action.payload };
 		case Types.SET_RESTAURANT:
-			return { ...state, restaurant: action.payload };
+			return { ...state, restaurantselected: action.payload };
 		default:
 			return state;
 	}

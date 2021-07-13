@@ -8,8 +8,8 @@ import { Restaurant, RestaurantInfo, Title, Address, RestaurantPhoto } from './s
 
 
 
-const RestaurantCard = ({ restaurant }) => (
-	<Restaurant>
+const RestaurantCard = ({ restaurant, onClick }) => (
+	<Restaurant onClick={onClick} >
 		<RestaurantInfo>
 			<Title>{restaurant.name}</Title>
 			<ReactStars count={5} isHalf value={restaurant.rating} edit={false} activeColor="#e7711c" />
