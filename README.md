@@ -16,6 +16,24 @@ Dependências:
 - React-JS Portals
 - google-maps-react
 - Redux e react-redux
+- react-lottie
+
+
+### Imagem do serviço original do Google para encontrar lugares:
+![imagem do serviço do Google find places](./assets/serviço-google-find.png)
+
+
+
+### O objetivo do projeto de clonar o serviço de procura do Google:
+![imagem do clone do serviço de procura por lugares do Google](./assets/clone-do-serviço-google-find.png)
+
+
+
+### Resultado Final do projeto com a aplicação da animação do react-lottie para preencher a UI enquanto se espera pelos dados da API Google Maps:
+![imagem final do projeto com a animação de espera pelos resultados da API](./assets/project-image.png)
+
+
+
 
 
 [^1] Orientado pelo professor Patrick Narciso (Software engineer) da Digital Innovation One. Trilha de Frontend.

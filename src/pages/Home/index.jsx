@@ -8,18 +8,23 @@ import restaurante from '../../assets/restaurante-fake.png';
 
 import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel, ModalTitle, ModalContent } from './styles';
 
-import { Card, RestaurantCard, Modal, Map } from '../../components';
+import { Card, RestaurantCard, Modal, Map, Loader } from '../../components';
 
 
 const Home = () => {
 	const [ inputValue, setInputValue ] = useState('');
 	const [ query, setQuery ] = useState(null);
 	const [ placeId, setPlaceId ] = useState(null);
-	const [ modalOpened, setModalOpened ] = useState(true);
+	const [ modalOpened, setModalOpened ] = useState(false);
 	const { restaurants, restaurantSelected } = useSelector((state) => state.restaurants);
 	
 	
-	
+	const restaurantsMocked = {
+		name: 'Nome do Restaurante', 
+		rating: 4, 
+		address: 'Endereço do Restaurante, n. 200', 
+		url: '../../assets/restaurante-fake.png'
+	};
 	
 	// Configurações para o slick-carousel
 	const settings = {
@@ -60,12 +65,18 @@ const Home = () => {
 						<Input
 							value={inputValue} onKeyPress={handleKeyPress} onChange={(e) => setInputValue(e.target.value)} />
 					</TextField>
-					<CarouselTitle>Na sua Área</CarouselTitle>
-					<Carousel {...settings}>
-						{restaurants.map((restaurant) => {
-							<Card key={restaurant.place_id} photo={restaurant.photos ? restaurant.photos[0].getUrl() : restaurante} title={restaurant.name} />
-						})}
-					</Carousel>
+					{restaurants.length > 0 ? (
+						<>
+							<CarouselTitle>Na sua Área</CarouselTitle>
+							<Carousel {...settings}>
+								{restaurants.map((restaurant) => {
+									<Card key={restaurant.place_id} photo={restaurant.photos ? restaurant.photos[0].getUrl() : restaurante} title={restaurant.name} />
+								})}
+							</Carousel>
+						</>
+					) : (
+						<Loader />
+					)}	
 				</Search>
 				{restaurants.map((restaurant) => 
 					<RestaurantCard onClick={() => handleOpenModal(restaurant.place_id)} restaurant={restaurant} />
