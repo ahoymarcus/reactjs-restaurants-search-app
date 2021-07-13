@@ -8,7 +8,7 @@ export const MapContainer = (props) => {
 	const { google } = props;
 	
 	return (
-		<Map google={google} ></Map>
+		<Map google={google} centerAroundCurrentLocation />
 	);
 };
 

@@ -5,9 +5,9 @@ import MaterialIcon from '@material/react-material-icon';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
 
-import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel, Map } from './styles';
+import { Wrapper, Container, Search, Logo, CarouselTitle, Carousel } from './styles';
 
-import { Card, RestaurantCard, Modal } from '../../components';
+import { Card, RestaurantCard, Modal, Map } from '../../components';
 
 
 const Home = () => {
