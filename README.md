@@ -32,6 +32,11 @@ Dependências:
 ![imagem do efeito skeleton para preenchimeto dos cartões de informação](./src/assets/image-exemplo-do-uso-skeleton-no-preenchimento-dos-dados.png)
 
 
+### Exemplo do uso do componente Skeleton no carregamento das imagens:
+![Exemplo do uso do componente Skeleton no carregamento das imagens](./src/assets/exemplo-do-uso-do-skeleton-no-carregamento-das-imagens.png)
+
+
+
 ### Resultado Final do projeto com a aplicação da animação do react-lottie para preencher a UI enquanto se espera pelos dados da API Google Maps:
 ![imagem final do projeto com a animação de espera pelos resultados da API](./src/assets/project-image.png)
 

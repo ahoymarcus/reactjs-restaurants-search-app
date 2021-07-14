@@ -63,14 +63,21 @@ const Home = () => {
 						trailingIcon={<MaterialIcon role="button" icon="delete"/>}
 					>
 						<Input
-							value={inputValue} onKeyPress={handleKeyPress} onChange={(e) => setInputValue(e.target.value)} />
+							value={inputValue} 
+							onKeyPress={handleKeyPress} 
+							onChange={(e) => setInputValue(e.target.value)} 
+						/>
 					</TextField>
 					{restaurants.length > 0 ? (
 						<>
 							<CarouselTitle>Na sua Área</CarouselTitle>
 							<Carousel {...settings}>
 								{restaurants.map((restaurant) => {
-									<Card key={restaurant.place_id} photo={restaurant.photos ? restaurant.photos[0].getUrl() : restaurante} title={restaurant.name} />
+									<Card 
+										key={restaurant.place_id} 
+										photo={restaurant.photos ? restaurant.photos[0].getUrl() : restaurante} 
+										title={restaurant.name} 
+									/>
 								})}
 							</Carousel>
 						</>
